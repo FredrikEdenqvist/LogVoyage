@@ -1,6 +1,10 @@
 # LogVoyage
 ## What it is
 a demo environment for getting cozy with structured logging in dotnet with filebeat, elasticsearch and kibana. This demo environment runs on Docker Desktop (works on mac and on windows from powershell/cmd **not WSL**)
+
+## Prerequisites
+* Docker Desktop (works on mac and on windows from powershell/cmd **not WSL**)
+
 ## How to run
 
 * run ```docker-compose up``` (in powershell or cmd on windows)
