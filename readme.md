@@ -33,3 +33,9 @@ Filebeat is configured with a pre-processor that parses the JSON content from th
 ```
 
 In Kibana, the log entries will have properties prefixed with data.*, determined by the objects present in the log entry.
+
+
+## Example views in Kibana
+make sure you have the index pattern filebeat-* created in Kibana before clicking links below
+
+[One example view when looking at Exceptions](http://localhost:5601/app/discover#/?_g=(filters:!(),refreshInterval:(pause:!f,value:5000),time:(from:now-1d,to:now))&_a=(columns:!('data.@m','data.@l','data.@x'),filters:!(),grid:(columns:(aws.cloudwatch.message:(width:293))),index:'7bb7b3c7-7e36-4d7a-9241-3246d4e866f9',interval:auto,query:(language:kuery,query:'data.@l:%20Error'),sort:!(!('@timestamp',desc))))
