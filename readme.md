@@ -36,6 +36,8 @@ In Kibana, the log entries will have properties prefixed with data.*, determined
 
 
 ## Example views in Kibana
-make sure you have the index pattern filebeat-* created in Kibana before clicking links below
+make sure you have the environment up and running and the index pattern filebeat-* created in Kibana before clicking links below
 
 [One example view when looking at Exceptions](http://localhost:5601/app/discover#/?_g=(filters:!(),refreshInterval:(pause:!f,value:5000),time:(from:now-1d,to:now))&_a=(columns:!('data.@m','data.@l','data.@x'),filters:!(),grid:(columns:(aws.cloudwatch.message:(width:293))),index:'7bb7b3c7-7e36-4d7a-9241-3246d4e866f9',interval:auto,query:(language:kuery,query:'data.@l:%20Error'),sort:!(!('@timestamp',desc))))
+
+[One example view when searching for a Position with Latitude greater than 24](http://localhost:5601/app/discover#/?_g=(filters:!(),refreshInterval:(pause:!f,value:5000),time:(from:now-1d,to:now))&_a=(columns:!('data.@m',data.Position.Latitude),filters:!(),grid:(columns:(aws.cloudwatch.message:(width:293))),index:'7bb7b3c7-7e36-4d7a-9241-3246d4e866f9',interval:auto,query:(language:kuery,query:'container.name:%20app%20and%20data.Position.Latitude%20%3E%2024'),sort:!(!('@timestamp',desc))))
