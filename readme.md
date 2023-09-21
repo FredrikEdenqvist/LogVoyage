@@ -4,7 +4,7 @@ a demo environment for getting cozy with structured logging in dotnet with fileb
 
 ## Prerequisites
 * Docker Desktop (works on mac and on windows)
-* For wsl: "The default operating system limits on mmap counts is likely to be too low, which may result in out of memory exceptions." This is mitigated via running ```sudo sysctl -w vm.max_map_count=262144``` on wsl docker is running on. Ref. [Virutal memory (Elastic Docs)](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html).
+* For wsl: "The default operating system limits on mmap counts is likely to be too low, which may result in out of memory exceptions." This is mitigated via running ```sudo sysctl -w vm.max_map_count=262144``` on wsl docker is running on. Ref. [Virtual memory (Elastic Docs)](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html).
 
 ## How to run
 
